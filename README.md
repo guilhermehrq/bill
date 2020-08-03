@@ -4,8 +4,6 @@
 
 Repositório para disponibilizar todos os artefatos construidos no desenvolvimento do projeto de TCC Bill.
 
---- 
-
 ## Códigos Fonte
 
 - [Bill - API](https://github.com/guilhermehrq/bill-api)
