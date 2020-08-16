@@ -224,3 +224,21 @@ CREATE TABLE IF NOT EXISTS schedule_repetitions (
   CONSTRAINT fk_schedule_repetitions_schedules
     FOREIGN KEY (schedule_id) REFERENCES schedules (id)
 );
+
+
+-- -----------------------------------------------------
+-- Table articles
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS articles;
+
+CREATE TABLE IF NOT EXISTS articles (
+	id          SERIAL       NOT NULL,
+	title       VARCHAR(100) NOT NULL,
+	description VARCHAR(255) NOT NULL,
+	url         VARCHAR(255) NOT NULL,
+	img         VARCHAR(255) NOT NULL,
+	date        DATE         NOT NULL DEFAULT now(),
+	partner     VARCHAR(100) NOT NULL,
+	CONSTRAINT 
+		pk_articles_id PRIMARY KEY(id)
+);
